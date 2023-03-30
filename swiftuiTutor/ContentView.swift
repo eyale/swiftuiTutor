@@ -10,29 +10,42 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "paperplane.circle.fill").symbolRenderingMode(.multicolor)
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-                
+            MapView()
+                .frame(height: 300)
+                .ignoresSafeArea(edges: .top)
+            CircleImage()
+                .offset(y: -130)
+                .padding(.bottom, -130)
+            
             VStack(alignment: .leading) {
-                Text("Hello, SwiftUI!")
+                
                 
                 Text("Turtle Rock")
                     .font(.title)
                     .foregroundColor(.gray)
                 
-                HStack() {
+                HStack(alignment: .bottom) {
                     Text("Joshua Tree National Park")
-                        .font(.subheadline)
-                        .fontWeight(.bold)
+                        .font(.title)
                     Spacer()
                     Text("California")
                 }
                 
+                Divider()
+                
+                VStack(alignment: .leading) {
+                    Text("Description:")
+                        .fontWeight(.bold)
+                        .padding(.bottom, 20)
+                    
+                    Text("Turtle Rock is a neighborhood in the south part of Irvine, Orange County, California, near Concordia University, Irvine and the University of California, Irvine.")
                 }
+                
+                }.padding()
+            Spacer()
         }
             
-        .padding()
+       
     }
 }
 

@@ -12,6 +12,7 @@
 		7F48534B29D2E7B90090EF4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F48534A29D2E7B90090EF4F /* Assets.xcassets */; };
 		7F48534E29D2E7B90090EF4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F48534D29D2E7B90090EF4F /* Preview Assets.xcassets */; };
 		7F7AF23329D56F9600FFCCC1 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7AF23229D56F9600FFCCC1 /* CircleImage.swift */; };
+		7F96309629D5BAB9008058A5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F96309529D5BAB9008058A5 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		7F48534A29D2E7B90090EF4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F48534D29D2E7B90090EF4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F7AF23229D56F9600FFCCC1 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		7F96309529D5BAB9008058A5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				7F48534829D2E7B50090EF4F /* ContentView.swift */,
 				7F48534A29D2E7B90090EF4F /* Assets.xcassets */,
 				7F7AF23229D56F9600FFCCC1 /* CircleImage.swift */,
+				7F96309529D5BAB9008058A5 /* MapView.swift */,
 				7F48534C29D2E7B90090EF4F /* Preview Content */,
 			);
 			path = swiftuiTutor;
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F48534929D2E7B50090EF4F /* ContentView.swift in Sources */,
+				7F96309629D5BAB9008058A5 /* MapView.swift in Sources */,
 				7F48534729D2E7B50090EF4F /* swiftuiTutorApp.swift in Sources */,
 				7F7AF23329D56F9600FFCCC1 /* CircleImage.swift in Sources */,
 			);
