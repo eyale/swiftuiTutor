@@ -12,15 +12,23 @@ struct LandmarkRow: View {
     
     var body: some View {
         HStack {
-            landmark.image.resizable().clipShape(Circle()).frame(width: 70, height: 70)
+            landmark.image
+                .resizable()
+                .clipShape(Circle())
+                .frame(width: 70, height: 70)
             Text(landmark.name)
             Spacer()
+            
+            Image(systemName: landmark.isFavorite ? "star.fill" : "star")
+                .foregroundColor( landmark.isFavorite ? .yellow :.gray)
         }
     }
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
+        let landmarks = ModelData().landmarks
+        
         Group {
             LandmarkRow(landmark: landmarks[0])
             LandmarkRow(landmark: landmarks[1])
