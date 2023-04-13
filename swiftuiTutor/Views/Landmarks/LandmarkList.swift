@@ -23,7 +23,7 @@ struct LandmarkList: View {
             List {
                 Toggle(isOn: $isShowFavorites, label: {
                     Text("Show only favorites").padding(.vertical, 10)
-                })
+                }).tint(.accentColor)
                 
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
