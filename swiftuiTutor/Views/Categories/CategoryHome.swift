@@ -14,12 +14,22 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
+                
+                modelData.features[0].image
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+                    .listRowInsets(EdgeInsets())
+//                    .clipShape(Circle())
+//                    .overlay(Rectangle().stroke(Color.accentColor, lineWidth: 2.2))
+                
                 ForEach(
                     modelData.categories.keys.sorted(),
                     id: \.self
                 ) { key in
-                    Text(key)
+                    CategoryRow(categoryName: key, items: modelData.categories[key]!)
                 }
+                .listRowInsets(EdgeInsets())
             }
             .navigationTitle("Featured")
         }
