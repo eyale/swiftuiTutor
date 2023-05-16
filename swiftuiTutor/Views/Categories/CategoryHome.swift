@@ -35,7 +35,10 @@ struct CategoryHome: View {
             .navigationTitle("Featured")
             .toolbar {
                 Button {
-                    showingProfile.toggle()
+                    withAnimation {
+                        showingProfile.toggle()
+                    }
+
                 } label: {
                     Label("User Profile", systemImage: "person.crop.circle")
                 }
