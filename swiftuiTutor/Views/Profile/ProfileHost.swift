@@ -17,17 +17,15 @@ struct ProfileHost: View {
                 Spacer()
                 EditButton()
             }
+            .padding(.horizontal)
 
             if editMode?.wrappedValue == .active {
                 ProfileSummary(profile: modelData.profile)
             } else {
-                Text("Profile Editor")
-                    .font(.title)
-                Spacer()
+                ProfileEditor(profile: $draftProfile)
             }
 
         }
-        .padding()
     }
 }
 
